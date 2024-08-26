@@ -1,0 +1,253 @@
+/* Estilos básicos del cuerpo */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+/* Estilo para el encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #003366, #000000);
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    overflow: visible; /* Asegura que el contenido no se corte */
+}
+
+header.scrolled {
+    padding: 10px;
+    background: #000000;
+    overflow: visible; /* Asegura que el contenido no se corte al hacer scroll */
+}
+
+/* Estilo para el logo */
+.logo {
+    max-width: 150px; /* Tamaño máximo del contenedor */
+    max-height: 150px; /* Altura máxima del contenedor */
+    overflow: visible; /* Asegura que el logo no se corte */
+}
+
+.logo img {
+    width: 100%; /* Hace que la imagen llene todo el contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Asegura que el logo sea un bloque separado */
+}
+
+/* Asegura que el logo no se corte al hacer scroll */
+header.scrolled .logo {
+    max-width: 120px; /* Tamaño más pequeño del contenedor al hacer scroll */
+    max-height: 120px; /* Altura más pequeña del contenedor al hacer scroll */
+    overflow: visible; /* Asegura que el logo no se corte */
+}
+
+header.scrolled .logo img {
+    width: 100%; /* Mantiene la imagen ajustada al nuevo tamaño del contenedor */
+    height: auto;
+}
+
+/* Estilo para el menú de navegación */
+nav {
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 15px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #34495e;
+    color: #ffffff;
+}
+
+/* Estilo para el contenido principal */
+main {
+    padding-top: 70px;
+    color: #ffffff;
+    background-color: #2c3e50;
+}
+
+/* Estilo para el pie de página */
+footer {
+    background-color: #1abc9c;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilo para la sección de Suscripción */
+#suscripcion {
+    padding: 50px 20px;
+    background-color: #34495e;
+    color: #ecf0f1;
+    text-align: center;
+}
+
+.subscribe-button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscribe-button:hover {
+    background-color: #c0392b;
+}
+
+/* Estilo para la sección de Redes Sociales */
+#social {
+    padding: 50px 20px;
+    background-color: #34495e;
+    color: #ecf0f1;
+}
+
+/* Ocultar otras secciones */
+#otros-elementos {
+    display: none !important;
+}
+
+/* Mantener visible solo la sección de contacto */
+#contacto {
+    display: block !important;
+}
+
+/* Ajustar el tamaño de las imágenes en general */
+img {
+    width: 150px; /* Ajusta según el tamaño deseado */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Ejemplo de cómo incluir una imagen en CSS */
+.logo {
+    background-image: url('../js/images/logo.png');
+    background-size: contain; /* Asegura que el logo se ajuste al contenedor sin cortarse */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+nav ul li a {
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #34495e;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+header {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+form {
+    background-color: #34495e;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+form input, form textarea {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+}
+@media (max-width: 768px) {
+    nav ul {
+        display: block;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .media-item {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+.logo {
+    background-image: url('../js/images/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 150px;
+    max-height: 150px;
+}
+.logo img {
+    width: 100%;
+    height: auto;
+}
+/* Estilo para la sección de Contacto */
+#contacto {
+    padding: 50px 20px;
+    background-color: #34495e;
+    color: #ecf0f1;
+    text-align: center;
+}
+
+#contacto p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#contacto a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+#contacto a:hover {
+    color: #1abc9c;
+}
+/* Estilo para los íconos de redes sociales */
+.social-icons {
+    text-align: center; /* Centra los íconos */
+    margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+.social-icon {
+    display: inline-block; /* Alinea los íconos en línea */
+    margin: 0 10px; /* Espaciado horizontal entre íconos */
+}
+
+.social-icon img {
+    max-width: 24px; /* Tamaño máximo para el ancho del ícono */
+    max-height: 24px; /* Tamaño máximo para la altura del ícono */
+    width: auto; /* Mantiene la proporción de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+
+.social-icon:hover img {
+    transform: scale(1.1); /* Efecto de aumento al pasar el cursor */
+    opacity: 0.8; /* Cambia la opacidad al pasar el cursor */
+}
+/* Estilo para el pie de página */
+footer {
+    background-color: #1abc9c;
+    padding: 10px;
+    text-align: center;
+}

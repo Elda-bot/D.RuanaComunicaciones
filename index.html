@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D. Ruana Comunicaciones</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Estilos básicos del cuerpo */
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+        }
+
+        /* Estilo para el encabezado */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: linear-gradient(to right, #003366, #000000);
+            width: 100%;
+            box-sizing: border-box;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        header.scrolled {
+            padding: 10px;
+            background: #000000;
+        }
+
+        /* Estilo para el logo */
+        .logo img {
+            max-width: 150px; /* Ajusta este valor según lo que necesites */
+            height: auto;
+            transition: opacity 0.3s ease;
+        }
+
+        /* Estilo para el menú de navegación */
+        nav {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: inline-flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 15px 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #34495e;
+            color: #ffffff;
+        }
+
+        /* Estilo para el contenido principal */
+        main {
+            padding-top: 70px;
+            color: #ffffff;
+            background-color: #2c3e50;
+        }
+
+        /* Estilo para la sección de inicio */
+        #inicio {
+            padding: 60px 20px;
+            background-color: #34495e;
+            text-align: center;
+        }
+
+        #inicio h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        #inicio p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        /* Estilo para la sección de Proyectos */
+        #proyectos {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #proyectos h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo para la sección de Multimedia */
+        #multimedia {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .media-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .media-item {
+            background-color: #95a5a6;
+            padding: 20px;
+            border-radius: 10px;
+            width: 30%;
+            margin: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .media-item h3 {
+            margin-bottom: 10px;
+        }
+
+        /* Estilo para la sección de Nosotros */
+        #nosotros {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #nosotros h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo para la sección de Contacto */
+        #contacto {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: none;
+            box-sizing: border-box;
+        }
+
+        .submit-btn {
+            background-color: #1abc9c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #16a085;
+        }
+
+        /* Estilo para el pie de página */
+        footer {
+            background-color: #1abc9c;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Ocultar secciones no deseadas */
+        #social {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabecera con logo y navegación -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo">
+        </div> 
+        <nav class="menu">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#multimedia">Multimedia</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   <!-- Sección Inicio -->
+<section id="inicio">
+    <h1>Comunicación que transforma y hace la diferencia</h1>
+    <div id="social">
+        <a href="https://facebook.com/tuPerfil" target="_blank" class="social-icon">
+            <img src="images/facebook-icon.png" alt="Facebook">
+        </a>
+        <a href="https://instagram.com/tuPerfil" target="_blank" class="social-icon">
+            <img src="images/instagram-icon.png" alt="Instagram">
+        </a>
+        <a href="https://youtube.com/tuCanal" target="_blank" class="social-icon">
+            <img src="images/youtube-icon.png" alt="YouTube">
+        </a>
+    </div>
+</section>
+
+<!-- Sección Proyectos -->
+<section id="proyectos">
+    <h2>Proyectos</h2>
+    <p>Detalles sobre los proyectos realizados.</p>
+    <div id="social">
+        <a href="https://facebook.com/tuPerfil" target="_blank" class="social-icon">
+            <img src="images/facebook-icon.png" alt="Facebook">
+        </a>
+        <a href="https://instagram.com/tuPerfil" target="_blank" class="social-icon">
+            <img src="images/instagram-icon.png" alt="Instagram">
+        </a>
+        <a href="https://youtube.com/tuCanal" target="_blank" class="social-icon">
+            <img src="images/youtube-icon.png" alt="YouTube">
+        </a>
+    </div>
+</section>
+
+<!-- Sección Multimedia -->
+<section id="multimedia">
+    <h2>Multimedia</h2>
+    <div class="media-grid">
+        <div class="media-item">
+            <h3>Podcast</h3>
+            <p>Escucha nuestros últimos episodios.</p>
+        </div>
+        <div class="media-item">
+            <h3>Fotografías</h3>
+            <p>Explora nuestra galería de imágenes.</p>
+        </div>
+        <div class="media-item">
+            <h3>Videos</h3>
+            <p>Disfruta de nuestros videos más recientes.</p>
+        </div>
+    </div>
+    <div id="social">
+        <a href="https://facebook.com/tuPerfil" target="_blank" class="social-icon">
+            <img src="images/facebook-icon.png" alt="Facebook">
+        </a>
+        <a href="https://instagram.com/tuPerfil" target="_blank" class="social-icon">
+            <img src="images/instagram-icon.png" alt="Instagram">
+        </a>
+        <a href="https://youtube.com/tuCanal" target="_blank" class="social-icon">
+            <img src="images/youtube-icon.png" alt="YouTube">
+        </a>
+    </div>
+</section>
+
+<!-- Sección Nosotros -->
+<section id="nosotros">
+    <h2>Nosotros</h2>
+    <p>Somos un medio de comunicación independiente comprometido con la verdad y la transparencia.</p>
+    <div id="social">
+        <a href="https://facebook.com/tuPerfil" target="_blank" class="social-icon">
+            <img src="images/facebook-icon.png" alt="Facebook">
+        </a>
+        <a href="https://instagram.com/tuPerfil" target="_blank" class="social-icon">
+            <img src="images/instagram-icon.png" alt="Instagram">
+        </a>
+        <a href="https://youtube.com/tuCanal" target="_blank" class="social-icon">
+            <img src="images/youtube-icon.png" alt="YouTube">
+        </a>
+    </div>
+</section>
+
+<!-- Sección Contacto -->
+<section id="contacto">
+    <h2>Contacto</h2>
+    <div class="social-icons">
+        <a href="https://facebook.com/tuPerfil" target="_blank" class="social-icon">
+            <img src="images/facebook-icon.png" alt="Facebook">
+        </a>
+        <a href="https://instagram.com/tuPerfil" target="_blank" class="social-icon">
+            <img src="images/instagram-icon.png" alt="Instagram">
+        </a>
+        <a href="https://youtube.com/tuCanal" target="_blank" class="social-icon">
+            <img src="images/youtube-icon.png" alt="YouTube">
+        </a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=d.ruanacomunicaciones@gmail.com" target="_blank" class="social-icon">
+            <img src="images/gmail-icon.png" alt="Gmail">
+        </a>
+        
+        
+    </div>
+</section>
+
+
+
+
+
+
+<!-- Pie de página -->
+<footer>
+    <p>&copy; 2024 D. Ruana Comunicaciones. Todos los derechos reservados.</p>
+    <div id="social">
+        <a href="https://facebook.com/tuPerfil" target="_blank" class="social-icon">
+            <img src="images/facebook-icon.png" alt="Facebook">
+        </a>
+        <a href="https://instagram.com/tuPerfil" target="_blank" class="social-icon">
+            <img src="images/instagram-icon.png" alt="Instagram">
+        </a>
+        <a href="https://youtube.com/tuCanal" target="_blank" class="social-icon">
+            <img src="images/youtube-icon.png" alt="YouTube">
+        </a>
+    </div>
+</footer>
+
+
+</body>
+</html>
